@@ -37,7 +37,7 @@ int main() {
 		{BillKind::TWENTY, 3}
 	};
 
-	cout << "Total Cash in Wallet: " << totalCash(inWallet) << endl;
+	cout << "Total Cash in Wallet: " << totalCash(inWalet) << endl;
 
 	return 0;
 }
