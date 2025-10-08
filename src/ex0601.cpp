@@ -8,12 +8,12 @@ void reduce_balance(int* p, int by) {
 
 int main() {
 	int balance = 85;
-	int* prt = &balance;
+	int* ptr = &balance;
 
 	cout << balance << ptr << endl;
 
 	int w = 15;
-	reduce_balance(prt, w);
+	reduce_balance(ptr, w);
 
 	cout << balance << endl;
 
