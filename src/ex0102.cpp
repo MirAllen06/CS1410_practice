@@ -2,7 +2,7 @@
 
 using namespace std;
 
-main(){
+int main(){
     double c, f;
     cout << "Temperature in Celcius: " << endl;
     cin>> c;
