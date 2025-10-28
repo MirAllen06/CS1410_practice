@@ -1,30 +1,8 @@
 #include <iostream>
 #include <iomanip>
+#include "author.h"
 
 using namespace std;
-
-class Author {
-private:
-	string name; 
-	string nationality;
-
-public:
-	Author(const string& name, const string& nationality) : name(name), nationality(nationality) {}
-
-	string getName() const {
-		return name;
-	}
-	string getNationality() const {
-		return nationality;
-	}
-
-	void setName(const string& name) {
-		this->name = name;
-	}
-	void setNationality(const string& nat) {
-		nationality = nat;
-	}
-};
 
 class Book {
 private:
@@ -57,7 +35,7 @@ public:
 
 	void show() const {
 		cout << "Book:" << title << "( " << ", Year: " << year << " )\n"
-			 << "  Author: " << author.getName() << "[" << author.getNationality() << "]" << endl;
+			<< "  Author: " << author.getName() << "[" << author.getNationality() << "]" << endl;
 	}
 };
 
