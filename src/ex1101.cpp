@@ -15,7 +15,7 @@ int main() {
 	default_random_engine en;
 	normal_distribution<double> dist(mean, sd);
 
-	ofstream out("dat.txt");
+	ofstream out("data.txt");
 	for(int i = 0; i < N; ++i) {
 		int x = round(dist(en));
 		x = max(min_val, min(max_val, x));
@@ -24,7 +24,7 @@ int main() {
 	}
 	out.close();
 
-	cout << "Generated " << N << " numbers in dat.txt" << endl;
+	cout << "Generated " << N << " numbers in data.txt" << endl;
 
 	return 0;
 }
