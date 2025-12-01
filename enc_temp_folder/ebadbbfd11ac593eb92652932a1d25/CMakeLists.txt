@@ -41,4 +41,3 @@ add_executable(ex1101 src/ex1101.cpp)
 add_executable(ex1102 src/ex1102.cpp)
 
 add_executable(ex1201 src/ex1201.cpp)
-add_executable(ex1202 src/ex1202.cpp)

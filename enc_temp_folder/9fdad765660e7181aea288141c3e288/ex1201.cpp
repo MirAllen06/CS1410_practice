@@ -3,18 +3,17 @@
 
 using namespace std;
 
-template <typename T>
 class Calculator {
 private:
-	T a, b;
+	int a, b;
 public:
-	Calculator(T a, T b) : a(a), b(b) {}
+	Calculator(int a, int b) : a(a), b(b) {}
 
-	T add() const { return a + b; }
+	int add() const { return a + b; }
 
-	T subtract() const { return a - b; }
+	int subtract() const { return a - b; }
 
-	T multiply() const { return a * b; }
+	int multiply() const { return a * b; }
 
 	double divide() const {
 		if (b == 0) {
@@ -27,13 +26,13 @@ public:
 int main() {
 
 	try {
-		Calculator<double> c(10.0, 2.0);
+		Calculator c(10, 2);
 		cout << c.add() << endl;
 		cout << c.subtract() << endl;
 		cout << c.multiply() << endl;
 		cout << c.divide() << endl;
 
-		Calculator<int> c1(4, 0);
+		Calculator c1(4, 0);
 		cout << c1.add() << endl;
 		cout << c1.subtract() << endl;
 		cout << c1.multiply() << endl;
